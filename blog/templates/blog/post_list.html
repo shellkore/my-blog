@@ -4,18 +4,15 @@
 	<title>Shellkore's Blog</title>
 </head>
 <body>
-	<div>
-		<h2> First harcoded post</h2>
-		<p>
-			Some Random Text. This is harcoded. It will be replaced by dynamic content soon.
-		</p>
-	</div>
-	<div>
-		<h2> Second Harcoded post</h2>
-		<p>
-			Again. I don't know why I am doing this. ;)
-		</p>
-	</div>
+	{% for post in posts %}
+		<div>
+			<p>published:{{post.published_date}}</p>
+			<h3><a href="">{{post.title}}</a></h3>
+			<p>-by:{{post.author}}</p>
+			<p>{{post.text}}</p>
+
+		</div>
+	{%endfor%}
 
 </body>
 </html>
