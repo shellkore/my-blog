@@ -4,3 +4,6 @@ A blog site made with Django.
 ## Live Demo
 
 [my-blog](http://shellkore.pythonanywhere.com/)
+
+
+> Django is cool.
